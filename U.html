@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="tyl.css"> -->
+    <style>
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f5f8ff;
+            margin: 0;
+        }
+
+        *{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;    
+    /* background-color:    #00AA77; */
+}
+
+.navbar {
+    height:60px;
+    width: 100%;
+    background-color:    #00AA77;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+.nav-log {
+    height: 50px;
+    width: 50px;
+}
+
+.logo {
+    background-image: url("logo4.jpg");
+    height: 50px;
+    width:50px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.border {
+    border: 2px solid transparent;
+
+}
+.border:hover {
+    border:2px solid white ;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+   
+}
+.links li{
+    margin-right: 20px;
+    
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    
+}
+.login a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    margin-right: 20px;
+}
+
+        .faq {
+            /* height: 500px; */
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 40px;
+        }
+
+        .faq h1 {
+            color: #333;
+        }
+
+        .tab {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .tab input {
+            display: none;
+        }
+
+        .tab label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tab label::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+
+        .tab:hover label::after {
+            color: #333;
+        }
+
+        .tab input:checked ~ label::after {
+            transform: rotate(135deg);
+        }
+
+        .tab label h2 {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .tab label:nth-child() h2 {
+            background: linear-gradient(135deg, #70f570, #49c628);
+        }
+
+        .tab label h3 {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .faqcontent {
+            max-height: 0;
+            transition: max-height 1s;
+            overflow: hidden;
+        }
+
+        .tab input:checked ~ .faqcontent {
+            max-height: 100vh;
+        }
+
+        .faqcontent p {
+            position: relative;
+            padding: 10px 0;
+            color: #333;
+        }
+
+        .foot-panel1{
+    
+        background-color:   #33BB92;
+        color: white;
+        height: 50px;
+        display: flex;
+     justify-content: center;
+    align-content: center;   
+    padding: 1rem; 
+    font-size: 21px;
+}
+.foot-panel2{
+    border-top: 1px solid white;
+    padding: 1rem;
+    background-color:    #33BB92;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+   
+}
+.foot-panel2 ul a {
+    display: block;
+    text-align: left;
+    list-style: none;
+    font-size: 1 rem;
+    
+
+}
+.nodec{ 
+   text-decoration: none; 
+   color: white;
+}
+    </style>
+</head>
+
+<body>
+    <!-- <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="border"><a href="index.html">Home</a></li>
+                    <li class="border"><a href="">Books</a></li>
+                    <li class="border"><a href="#">Categories</a></li>
+                    <li class="border"><a href="#">Events</a></li>
+                    <li class="border"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="Signup.html">Login <i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </header> -->
+    <header>
+        <div class="navbar">
+            <div class="nav-logo ">
+                <div class="logo "></div>
+            </div>
+            <div class="links ">
+                <ul>
+                    <li class="border"><a href="index.html">Home</a></li>
+                    <li class="border"><a href="events.html">Events</a></li>
+                    <li class="border"><a href="search_result.html">Books</a></li>
+                    <li class="border"><a href="categories.html">Categories</a></li>
+                    <li class="border"><a href="Membership.html">Membership</a></li>
+                </ul>
+            </div>
+            <div class="login ">
+                <a href="Signup.html">Login <i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc1">
+            <label for="acc1">
+                <h2>01</h2>
+                <h3>How do I apply?</h3>
+            </label>
+            <div class="faqcontent">
+                <p>To create an account, simply follow these easy steps. First, click on the 'Sign Up' button located at the top right corner of the page. You will be directed to the registration form where you'll need to provide some basic information such as your name, email address, and a secure password. Once you've filled out the required details, click the 'Create Account' button. A confirmation email will be sent to the provided email address. Click on the confirmation link within the email to verify your account, and you're all set! You can now log in using your email and password, and start enjoying all the benefits of our platform.</p>
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" name="acc" id="acc2">
+            <label for="acc2">
+                <h2>02</h2>
+                <h3>Lost or forgotten your password?</h3>
+            </label>
+            <div class="faqcontent">
+                <p>If you've lost or forgotten your password, don't worry; we've got you covered. Click on the 'Forgot Password' link on the login page, and you'll be prompted to enter the email address associated with your account. After you submit your email address, we'll send you a password reset link to that email. Simply check your inbox (and your spam folder, just in case), and click on the reset link. You'll be directed to a page where you can create a new password for your account. Once you've set a new password, you'll be able to log in with your updated credentials. It's that easy! If you encounter any issues during this process, feel free to reach out to our support team for assistance.</p>
+            </div>
+        </div>
+        <div class = "tab">
+            <input type="radio" name ="acc" id="acc3">
+            <label for = "acc3">
+                <h2>03</h2>
+                <h3>How can I update my profile information?</h3>
+            </label>
+            <div class ="faqcontent">
+                <p>"To update your profile information, log in to your account and navigate to the 'Profile' or 'Account Settings' section 
+                    From there, you can edit your personal details, such as your name, email address, and profile picture. Remember to save your changes after making updates.
+                 Once you've set a new password,you'll be able to log in with your updated credentials.
+                 It's that easy! If you encounter any issues during this process, feel free to reach out to our support team for assistance."</p>
+            </div>
+            
+    </div>
+    <div class = "tab">
+        <input type="radio" name ="acc" id="acc4">
+        <label for = "acc4">
+            <h2>04</h2>
+            <h3>What is the process for returning books, and what are the late fees?</h3>
+        </label>
+        <div class ="faqcontent">
+            <p>"You can return books by visiting your nearest library branch or using our book drop-off points. 
+                Late fees may apply if you return books after their due date. 
+                The late fee amount varies depending on the type of book and the duration of the delay. 
+           To check the specific late fees for your account, log in and view the 'My Library' section 
+           or contact our library staff for assistance."</p>
+        </div></div></div>
+        <footer>
+            <div class="foot-panel1">
+                <a href="index.html " style="text-decoration:none; color:aliceblue">Back To Home</a>
+            </div>
+            <div class="foot-panel2">
+                <ul >
+                    <h3>Quick Links</h3><br>
+                    <a href="U.html" class="nodec">FAQ<i class="fa-solid fa-question"></i></a>
+                    <a>Terms Of Use <i class="fa-regular fa-clipboard"></i></a>
+                </ul>
+                <ul>
+                    <h3>Contact Information</h3><br>
+                    
+                    <a><i class="fa-solid fa-phone"></i>: +1 (123) 456-7890</a>
+                    <a><i class="fa-regular fa-envelope"></i>: info@BookMarks.com</a>
+                    <a><i class="fa-solid fa-copyright"></i> 2023 BookMarks</a>  
+                </ul>
+                <ul>
+                    <h3>Social Media Links</h3><br> 
+                    <a href="https://www.facebook.com" style="text-decoration:none; color:aliceblue">Facebook <i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" style="text-decoration:none; color:aliceblue">X <i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instragram.com" style="text-decoration:none; color:aliceblue">Instagram <i class="fa-brands fa-instagram"></i></a>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>
